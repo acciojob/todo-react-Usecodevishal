@@ -27,9 +27,10 @@ function Todoinput() {
       ></input>
       <button onClick={addTodoHandler}>Add Todo</button>
 
+      <ul>
       {allTodos.map((el,index) => (
         
-            <div 
+            <li 
             key={index}
             style={{
                 display:"flex",
@@ -45,9 +46,10 @@ function Todoinput() {
                     width:"50px",
                     height:"30px"
                 }}>Delete</button>
-            </div>
+            </li>
         
       ))}
+      </ul>
     </>
   );
 }
